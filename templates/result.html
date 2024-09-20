@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результат</title>
+    <style>
+        body {
+            background-color: #797979; /* Цвет фона страницы */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .box {
+            background-color: white; /* Цвет фона блока */
+            border: 2px solid #333; /* Граница блока */
+            padding: 20px; /* Отступы внутри блока */
+            border-radius: 10px; /* Скругление углов */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень блока */
+        }
+
+        h1 {
+            color: #333; /* Цвет текста */
+            font-size: 2em; /* Размер шрифта */
+            text-shadow: 
+                1px 1px 0 #fff, 
+                -1px -1px 0 #fff, 
+                1px -1px 0 #fff, 
+                -1px 1px 0 #fff; /* Обводка вокруг текста */
+        }
+
+        a {
+            display: inline-block; /* Делает ссылку блочным элементом для центровки */
+            margin-top: 20px; /* Отступ сверху для размещения под h1 */
+            text-decoration: none; /* Убирает подчеркивание ссылки */
+            color: #007bff; /* Цвет ссылки */
+            font-size: 1.2em; /* Размер шрифта ссылки */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>{{ result }}</h1>
+            <a href="/">Попробовать снова</a>
+        </div>
+    </div>
+</body>
+</html>
